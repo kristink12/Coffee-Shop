@@ -1,0 +1,277 @@
+/* GENERAL SETTINGS */
+#top-announcement {
+    position: relative;
+    top: 0;
+    right: 0;
+    left: 0;
+    background-color: yellow;
+    text-align: center;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    color: black;
+}
+#coffeehouse {
+    background-image: url("https://otherfiles-cbm.s3-us-west-2.amazonaws.com/CoffeeShopImage.jpg");
+    background-size: cover;
+    width: 100%;
+    height: 250px;
+    animation-name: background-pan;
+    animation-duration: 10s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes background-pan {
+    from { background-position: left; }
+    to { background-position: right; }
+}
+@media only screen
+    and (min-device-width: 375px)
+    and (max-device-width: 750px) {
+        
+/* REDUCE PADDING IN MAIN ELEMENT */
+    main { padding: 5px }
+
+/* FIX NAVIGATION BAR */
+    nav { height: 35px; }
+    nav ul { padding-top: 7px; }
+    nav li { display: inline; }
+    nav li a { color: white; }
+
+/* ADD EXTRA SPACING BETWEEN MENU ITEMS */
+.menu-item {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.title-item h2 { font-size: 1em; }
+
+/* FIX ADD ON ITEM */
+.menu-item.additional-items h2 {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width: 100%;
+    float: none;
+}
+
+/* REDUCE FOOTER HEADER SIZE AND ADD SOME PADDING */
+footer h2 {
+    font-size: 1.4em;
+    padding-top: 3px;
+    padding-bottom: 3px;
+}
+
+/* REDUCE SIZE OF FOOTER TEXT TO AVOID AWKWARD WRAPPING */
+footer li { 
+    font-size: 0.85em; }
+
+/* ADD PADDING TO BOTTOM OF FOOTER */
+footer { padding-bottom: 5px; }
+    }
+
+
+/* SPRITES */
+
+.sprite-palette {
+    display: block;
+    width: 40px;
+    height: 40px;
+    padding: 0;
+    border: none;
+    background: url('../images/sprite.png') 0 0;
+}
+.sprite-guitar {
+    display: block;
+    width: 40px;
+    height: 40px;
+    padding: 0;
+    border: none;
+    background: url('../images/sprite.png') -40px 0;
+}
+.sprite-mask {
+    display: block;
+    width: 40px;
+    height: 40px;
+    padding: 0;
+    border: none;
+    background: url('../images/sprite.png') -80px 0;
+}
+.sprite-controller {
+    display: block;
+    width: 40px;
+    height: 40px;
+    padding: 0;
+    border: none;
+    background: url('../images/sprite.png') -160px 0;
+}
+.sprite-mic {
+    display: block;
+    width: 40px;
+    height: 40px;
+    padding: 0;
+    border: none;
+    background: url('../images/sprite.png') -160px 0;
+}
+.sprite-quill {
+    display: block;
+    width: 40px;
+    height: 40px;
+    padding: 0;
+    border: none;
+    background: url('../images.sprite.png') -200px 0;
+}
+.sprite-cup {
+    display: block;
+    width: 40px;
+    height: 40px;
+    padding: 0;
+    border: none;
+    background: url('../images/sprite.png') -240px 0;
+}
+.sprite-utensils {
+    display: block;
+    width: 40px;
+    height: 40px;
+    padding: 0;
+    border: none;
+    background: url('..images/sprite.png') -280px 0;
+}
+.sprite-milk {
+    display: block;
+    width: 40px;
+    height: 40px;
+    padding: 0;
+    border: none;
+    background: url('../images/sprite.png') -320px 0;
+}
+
+/* END OF SPRITES */
+
+
+html {
+    line-height: 1.15; /* 1 */
+    -webkit-text-size-adjust: 100%; /* 2 */
+}
+
+body {
+    font-size: 16px;
+    font-family: "Arial", Helvetica, sans-serif;
+    margin: 0;
+    color: #000;
+}
+
+main { 
+    display: block;
+    padding: 30px 0;
+}
+
+* { outline: none !important; }
+
+a:hover {
+    text-decoration: none;
+    opacity: 0.95;
+}
+
+h1, h2, h3, h4, h5, h6, p, a, input, div, textarea, label {
+    margin: 0;
+}
+
+h2 { font-size: 28px; }
+
+ul {
+    list-style: none;
+    padding-left: 0;
+    font-weight: 400;
+    font-style: normal;
+    margin: 0;
+}
+
+p { font-size: 1em; }
+
+img { border-style: none; }
+
+.container {
+    width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+    max-width: 100%;
+    box-sizing: border-box;
+}
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+/* End General Settings */
+
+/* HEADER */
+
+header { 
+    background-image: linear-gradient(sienna, chocolate); 
+    padding: 10px;
+}
+
+.title-header .title {
+    display: inline-block;
+    color: #fff;
+    font-size: 18px;
+}
+
+.title-header .logo {
+    display: inline-block;
+}
+
+.title-header .logo img {
+    vertical-align: middle;
+}
+
+nav { background: saddlebrown; }
+
+nav li a { 
+    color: white;
+    display: inline-block;
+    padding: 10px 10px;
+}
+
+/* END OF HEADER */
+
+/* FOOTER */
+
+footer {
+    background: saddlebrown;
+    color: #fff;
+    padding: 10px;  
+    height: 100px;
+}
+
+footer a { color: cornsilk; }
+
+/* END FOOTER */
+
+
+/* Home Page Content */
+
+.menu-item.additional-items h2 {
+    width: 50%;
+    float: left;
+}
+
+.menu-item.additional-items .item-inner ul {
+    display: inline-block;
+    width: 50%;
+    float: left;
+}
+
+/* End Home Page Content */
+
+
+/* Page Content */
+
+.event-item {
+    margin-bottom: 25px;
+    border: 1px solid #000
+}
+
+/* End Page Content */
